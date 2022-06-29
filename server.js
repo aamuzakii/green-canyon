@@ -15,17 +15,6 @@ client.on('qr', qr => {
 client.on('ready', () => {
     console.log('Client is ready!');
     isClientReady = true
-    const number = "+6283894588105";
-
-    // Your message.
-   const text = "Hey john";
-  
-    // Getting chatId from the number.
-    // we have to delete "+" from the beginning and add "@c.us" at the end of the number.
-   const chatId = number.substring(1) + "@c.us";
-  
-   // Sending message.
-   client.sendMessage(chatId, text);
 });
 
 client.on('message', msg => {
