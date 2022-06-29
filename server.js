@@ -39,7 +39,7 @@ app.get('/otp', (req, res) => {
   const number = "+62" + cleanNumber;
  
   // Your message.
- const text = "OTP Persada Store" + otp;
+ const text = otp + " adalah kode OTP kamu. Kode OTP berlaku selama 5 menit.";
 
   // we have to delete "+" from the beginning and add "@c.us" at the end of the number.
  const chatId = number.substring(1) + "@c.us";
